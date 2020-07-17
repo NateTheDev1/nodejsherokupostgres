@@ -14,11 +14,18 @@ server.use(express.json());
 // ensure the entire server will use cors
 server.use(cors());
 
+const db = require("./dbConfig");
+
 // allows you to do a _GET_ request to the server to ensure its online
 server.get("/", (req, res) => {
   res.status(200).json({
     api: "Online",
   });
+});
+
+server.get("/users", async (req, res) => {
+  const users = await db("users");
+  res.status(200).json({ data: users });
 });
 
 // export your server so you can import it into your index.js file
