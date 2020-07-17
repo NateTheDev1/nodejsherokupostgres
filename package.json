@@ -1,32 +1,33 @@
 {
   "name": "nodejsherokupostgres",
   "version": "1.0.0",
-  "description": "Walkthrough of Express, NodeJs, Heroku, Postgres Implementation",
+  "description": "- in this project, i will be pretending to work in a veterinary clinic and need to store that data for what animal belongs to what owner",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tippitytapp/nodejsherokupostgres.git"
+    "url": "git+https://github.com/NateTheDev1/nodejsherokupostgres.git"
   },
-  "author": "Marc Tapp",
+  "keywords": [],
+  "author": "Nathaniel Richards <nathaniel-richards@lambdastudents.com> (https://nathanielrichards.dev)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tippitytapp/nodejsherokupostgres/issues"
+    "url": "https://github.com/NateTheDev1/nodejsherokupostgres/issues"
   },
-  "homepage": "https://github.com/tippitytapp/nodejsherokupostgres#readme",
+  "homepage": "https://github.com/NateTheDev1/nodejsherokupostgres#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "helmet": "^3.23.2",
-    "knex": "^0.21.1",
+    "helmet": "^3.23.3",
+    "knex": "^0.21.2",
     "knex-cleaner": "^1.3.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
-    "pg": "^8.2.1"
+    "pg": "^8.3.0"
   }
 }
